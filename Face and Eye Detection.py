@@ -22,7 +22,7 @@ while True:
 
     #When the face is detected, detect the eyes only in the face, draw the rectangle around them
     for (x,y,w,h) in faces:
-        #Draw the rectanegle for the face
+        #Draw the rectangle for the face
         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),5)
         roi_gray = gray[y:y+w , x:x+w]
         roi_color = frame[y:y+h, x:x+w ]
